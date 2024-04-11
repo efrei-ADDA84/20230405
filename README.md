@@ -1,27 +1,30 @@
+# Weather Wrapper Application
 
-Ce projet est un wrapper météo qui récupère les données météo d'un lieu donné en utilisant l'API OpenWeatherMap.
+## Description
+Ce projet est une application Python qui interroge l'API OpenWeather pour obtenir les conditions météorologiques actuelles basées sur la latitude et la longitude fournies via des variables d'environnement.
 
-## Utilisation
+## Prérequis
+- Python 3.8+
+- Docker
+- Compte DockerHub
 
-### Prérequis
+## Configuration
+Pour utiliser cette application, vous devez obtenir une clé API depuis [OpenWeather](https://openweathermap.org/api).
 
-Avoir python.
+## Installation
 
-### Installation
-
-1. Clonez ce dépôt :
-  
-
-2. Installez les dépendances requises en exécutant :
-   
-   pip install -r requirements.txt
+### Cloner le dépôt
+```bash
+git clone https://github.com/efrei-ADDA84/20230405.git
+cd weather_wrapper
 
 
+## Construire l'image docker
 
-### Exécution
+docker build -t weather_wrapper .
 
-docker run -e LATITUDE="12" -e LONGITUDE="12" -e OPENWEATHER_API_KEY="5a3638a1fe348edbce720562c4d4c0cc" weather_wrapper
+## Exécuter le conteneur Docker
 
-## Auteur
+exemple: docker run -e LATITUDE="12" -e LONGITUDE="12" -e OPENWEATHER_API_KEY="5a3638a1fe348edbce720562c4d4c0cc" weather_wrapper
 
-Ce projet a été créé par Magatte BA
+
