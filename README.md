@@ -17,14 +17,16 @@ Pour utiliser cette application, vous devez obtenir une clé API depuis [OpenWea
 ```bash
 git clone https://github.com/efrei-ADDA84/20230405.git
 cd weather_wrapper
-
+```bash
 
 ## Construire l'image docker
-
+```bash
 docker build -t weather_wrapper .
-
+```bash
 ## Exécuter le conteneur Docker
 
-exemple: docker run -e LATITUDE="12" -e LONGITUDE="12" -e OPENWEATHER_API_KEY="5a3638a1fe348edbce720562c4d4c0cc" weather_wrapper
-
+exemple:
+```bash
+docker run -e LATITUDE="12" -e LONGITUDE="12" -e OPENWEATHER_API_KEY="5a3638a1fe348edbce720562c4d4c0cc" weather_wrapper
+```bash
 
